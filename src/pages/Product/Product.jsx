@@ -10,11 +10,6 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 
-// import "./styles.css";
-// import Card from './components/Card/Card';
-// import CardBox from './components/CardBox/CardBox';
-// import CardBoxF from './components/CardBoxF/CardBoxF';
-// import BoxCard from './components/BoxCard/BoxCard';
   
 
 //translet
@@ -37,8 +32,8 @@ const Product = () => {
   const [lng, setIng] = useState();
   return (
     <div>
-      <div className="container">
-        <div className="md:pt-[20px]   bg-[#fff]">
+      <div className="container ">
+        <div className="pt-[20px]   bg-[#fff]">
           <Swiper
             spaceBetween={40}
             centeredSlides={true}
@@ -118,11 +113,11 @@ const Product = () => {
           </Swiper>
         </div>
         <div className="bg-[#f1eeee]   flex flex-col  pb-[150px] items-center ">
-          <div className=" p-[20px] ">
+          <div className=" p-[20px]  ">
             <h1 className="tx text-2xl ">{t("hi.title")}</h1>
             <h4 className="txx">Обновлено: 09.01.2026</h4>
           </div>
-          <div className="flex justify-center  p-[18px] rounded-[22px]  gap-[20px] bg-[#fff]">
+          <div className="firstCard flex justify-center  p-[18px] rounded-[22px]  gap-[20px] bg-[#fff]">
             <Card name="ДолларСША" name2="USD" name3="9.8923" />
             <Card name="Евро" name2="EUR" name3="10.8923" />
             <Card
@@ -136,7 +131,7 @@ const Product = () => {
         </div>
         <div className=" bg-[#f1eeee] ">
           <h1 className="tx text-center mb-[20px]">{t("hi.nav")}</h1>
-          <div className="flex gap-[19px] justify-center items-center pb-[120px]">
+          <div className="secCard flex gap-[19px] justify-center items-center pb-[120px]">
             <CardBox name={t("hi.propTx")} />
             <CardBox name={t("hi.propTx2")} />
             <CardBox name={t("hi.propTx3")} />
@@ -153,7 +148,7 @@ const Product = () => {
 
         <div className="bg-[#f1eeee]  pt-[25px]">
           <h1 className="tx text-center mb-[0px]">{t("hi.nav4")}</h1>
-          <div className="flex justify-center pb-[30px] pt-[30px] items-center gap-[20px]">
+          <div className="secCard flex justify-center pb-[30px] pt-[30px] items-center gap-[20px]">
             <CardBoxF name={t("hi.proCard")} />
             <CardBoxF name={t("hi.proCard2")} />
             <CardBoxF name={t("hi.proCard3")} />
@@ -163,16 +158,16 @@ const Product = () => {
         </div>
         <div className="bg-[#f1eeee]">
           <h1 className="tx text-center">{t("hi.nav3")}</h1>
-          <div className="flex justify-center gap-[20px] ">
-            <div className="bg-[#fff] flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[40%] gap-[20px]  ">
+          <div className="thCard flex justify-center gap-[20px] ">
+            <div className="bg-[#fff] thCard flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[40%] gap-[20px]  ">
               <div>
-                <div>
-                  <h4 className="bg-[#f1eeee] rounded-[12px] p-[4px] w-1/3 text-center">
+                <div className="thCard">
+                  <h4 className="bg-[#f1eeee] thCard rounded-[12px] p-[4px] w-1/3 text-center">
                     DC Leasing
                   </h4>
                 </div>
-                <h1 className="txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
-                <p className="w-[300px]">{t("hi.nav1")}</p>
+                <h1 className=" txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
+                <p className="thText w-[300px]">{t("hi.nav1")}</p>
               </div>
 
               <img
@@ -181,15 +176,15 @@ const Product = () => {
                 alt=""
               />
             </div>
-            <div className="bg-[#fff] flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[40%] gap-[20px]  ">
+            <div className="bg-[#fff] thCard flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[40%] gap-[20px]  ">
               <div>
-                <div>
-                  <h4 className="bg-[#f1eeee] rounded-[12px] p-[4px] w-1/3 text-center">
+                <div className="thCard">
+                  <h4 className="bg-[#f1eeee] thCard rounded-[12px] p-[4px] w-1/3 text-center">
                     DC Leasing
                   </h4>
                 </div>
-                <h1 className="txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
-                <p className="w-[300px]">{t("hi.nav1")}</p>
+                <h1 className=" txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
+                <p className="thText w-[300px]">{t("hi.nav1")}</p>
               </div>
 
               <img
@@ -200,47 +195,45 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#f1eeee]">
-          <div className="flex justify-center gap-[20px] ">
-            <div className="bg-[#fff] flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[30%] gap-[20px]  ">
-              <div>
-                <div>
-                  <h4 className="bg-[#f1eeee] rounded-[12px] p-[4px] w-1/3 text-center">
-                    DC Leasing
-                  </h4>
-                </div>
-                <h1 className="txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
-                <p className="w-[300px]">{t("hi.nav1")}</p>
+        <div className="thCard bg-[#f1eeee] flex justify-center gap-[20px] ">
+          <div className="bg-[#fff] thCard flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[40%] gap-[20px]  ">
+            <div>
+              <div className="thCard">
+                <h4 className="bg-[#f1eeee] thCard rounded-[12px] p-[4px] w-1/3 text-center">
+                  DC Leasing
+                </h4>
               </div>
-
-              <img
-                className="w-[15%]"
-                src="https://avatars.mds.yandex.net/i?id=a0234532b404a68c4ff4dc5fd7eb18903d3c7545-9146142-images-thumbs&n=13"
-                alt=""
-              />
+              <h1 className=" txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
+              <p className="thText w-[300px]">{t("hi.nav1")}</p>
             </div>
-            <div className="bg-[#fff] flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[50%] gap-[20px]   ">
-              <div>
-                <div>
-                  <h4 className="bg-[#f1eeee] rounded-[12px] p-[4px] w-1/3 text-center">
-                    DC Leasing
-                  </h4>
-                </div>
-                <h1 className="txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
-                <p className="w-[300px]">{t("hi.nav1")}</p>
+
+            <img
+              className="w-[15%]"
+              src="https://avatars.mds.yandex.net/i?id=a0234532b404a68c4ff4dc5fd7eb18903d3c7545-9146142-images-thumbs&n=13"
+              alt=""
+            />
+          </div>
+          <div className="bg-[#fff] thCard flex p-[20px] mt-[30px] rounded-[12px]  items-center w-[40%] gap-[20px]  ">
+            <div>
+              <div className="thCard">
+                <h4 className="bg-[#f1eeee] thCard rounded-[12px] p-[4px] w-1/3 text-center">
+                  DC Leasing
+                </h4>
               </div>
-
-              <img
-                className="w-[15%]"
-                src="https://avatars.mds.yandex.net/i?id=a0234532b404a68c4ff4dc5fd7eb18903d3c7545-9146142-images-thumbs&n=13"
-                alt=""
-              />
+              <h1 className=" txCd pt-[15px] pb-[15px]">{t("hi.nav2")}</h1>
+              <p className="thText w-[300px]">{t("hi.nav1")}</p>
             </div>
+
+            <img
+              className="w-[15%]"
+              src="https://avatars.mds.yandex.net/i?id=a0234532b404a68c4ff4dc5fd7eb18903d3c7545-9146142-images-thumbs&n=13"
+              alt=""
+            />
           </div>
         </div>
         <div className="bg-[#f1eeee]">
           <h1 className="tx text-center pt-[45px] pb-[45px]">{t("hi.tx1")}</h1>
-          <div className="flex justify-center gap-[3%]">
+          <div className="secCard flex justify-center gap-[3%]">
             <BoxCard
               tx={t("hi.textPr")}
               tx2={t("hi.textPr2")}
@@ -268,7 +261,7 @@ const Product = () => {
           <h1 className="tx text-center pt-[45px] pb-[45px]">
             {t("hi.txLast")}
           </h1>
-          <div className=" p-[13px] flex gap-[120px] w-[100%]  items-center justify-center">
+          <div className="frCard p-[13px] flex gap-[120px] w-[100%]  items-center justify-center">
             <div className="bg-[#fff] flex justify-between rounded-[32px] gap-[90px] p-[20px]">
               <div className="">
                 <h1 className="txxCd w-[150px]">{t("hi.txLast1")}</h1>
@@ -278,7 +271,7 @@ const Product = () => {
                 <button className="btn_Card">{t("hi.txLast3")}</button>
               </div>
               <img
-                className="w-[200px]"
+                className="frCardImg w-[200px]"
                 src="https://avatars.mds.yandex.net/i?id=5b8ad669304564b2ef8f3ee470f69c1de885461d-4034027-images-thumbs&n=13"
                 alt=""
               />
@@ -296,7 +289,7 @@ const Product = () => {
                 </div>
               </div>
               <img
-                className="w-[200px]"
+                className="frCardImg w-[200px]"
                 src="https://avatars.mds.yandex.net/i?id=5b8ad669304564b2ef8f3ee470f69c1de885461d-4034027-images-thumbs&n=13"
                 alt=""
               />
@@ -304,8 +297,8 @@ const Product = () => {
           </div>
         </div>
         {
-          <div className="bg-[#D9D9D9] px-[120px] py-[50px] ">
-            <ul className="flex gap-[20px] pb-[20px]">
+          <div className=" bg-[#D9D9D9] px-[120px] py-[50px] ">
+            <ul className="frCardImg flex gap-[20px] pb-[20px]">
               <li>{t("hi.liTxt")}</li>
               <li>{t("hi.liTxt2")}</li>
               <li>{t("hi.liTxt3")}</li>
@@ -316,8 +309,8 @@ const Product = () => {
               <li>{t("hi.liTxt8")}</li>
               <li>{t("hi.liTxt9")}</li>
             </ul>
-            <div className="flex gap-[120px]">
-              <div>
+            <div className="secCard flex gap-[120px]">
+              <div className="">
                 <h3 className="boxP pb-[15px]">Кредиты</h3>
                 <p>Дастрас</p>
                 <p>Автокредит</p>
