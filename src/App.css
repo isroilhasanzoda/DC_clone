@@ -1,0 +1,110 @@
+
+
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+.image_head {
+  width: 10%;
+}
+
+.selBox{
+  background: #f4f4f4;
+  padding: 10px 22px;
+  border-radius: 12px;
+  border: none;
+}
+
+.dv-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.dv-head2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-head {
+  border-radius: 12px;
+  padding: 9.5px 25px;
+  border: none;
+  color: white;
+  background-color: #ff7528;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.prTx{
+  font-size: 17px;
+  font-weight: 700;
+}
+.prTx1{
+  color: rgba(209, 204, 204, 0.721);
+}
+
+.tx{
+   font-size: 40px;
+   font-weight: 600;
+
+}
+.txx {
+  color: grey;
+}
+
+.cardBox:hover{
+  transform: translate(3px, -2px);
+  box-shadow: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.txCard {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.txCd{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.boxP {
+  font-weight: 900;
+}
+.txxCd{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.btn_Card{
+  background: #ff7528;
+  padding: 10px 25px;
+   border-radius: 13px;
+   color: white;
+   text-align: center;
+   /* font-size: 10px; */
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.btn_Card:hover{
+  background: blue;
+}
+
+.custTx{
+  color: #0f4a90;
+  font-size: 22px;
+}
+.custTx2{
+  font-weight: 700;
+  font-size: 19px;
+}
+
